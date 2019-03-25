@@ -1,0 +1,26 @@
+ func prim (n: Int) -> Bool
+ {
+ if n <= 1
+       { return false }
+
+    if n <= 3
+       { return true }
+
+    var i = 2
+    while i * i <= n
+     {   if n % i == 0
+        {   return false }
+        i = i + 1
+     }
+    return true
+    }
+
+var n = 42
+
+while n > 1{
+    if prim(n: n ) { print("\(String(describing: n))")  }
+    n -= 1
+    
+}
+print("\(n)")
+
