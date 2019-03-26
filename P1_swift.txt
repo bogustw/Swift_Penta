@@ -24,3 +24,8 @@ while n > 1 {
     n -= 1
 }
 print("\(n)")
+
+// Ca si rezultat, codul tau este corect. In materie de abordarea a problemei, trebuie un pic imbunatatit.
+// Enuntul problemei spune asa: Scrieți o funcție care primește ca parametru un număr natural n și afișează toate numerele prime din intervalul [0, n).
+// Deci functia noastra ar trebui sa primeasca parametru n (ceea ce ai facut ok), apoi sa afiseze numerele prime (functia ta returneaza un bool, dar nu afiseaza nimic. Faci afisarea ulterior, dar nu intr-o functie cum spune problema).
+// Solutia ta trebuie usor refactorizata (poti sparge in mai multe functii, de ex o functie care sa verifice daca un nr e prim si functia finala care afiseaza nr prime din [0,n), functie in care vei putea folosi functia care verifica daca un nr e prim.
