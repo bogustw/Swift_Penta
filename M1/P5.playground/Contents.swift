@@ -3,24 +3,20 @@ import UIKit
 func numar_palindrm ( number: Int) -> Int? {
     var aux = number
     var oglindit = 0
-    var produs = 1
-    var result = 0
+    
     
     while aux > 0 {
-        oglindit = oglindit * produs + aux % 10
-        produs *= 10
+        oglindit = oglindit * 10 + aux % 10
+        aux = aux / 10
     }
 
     if oglindit == number {
-            result = 1
+            return number
+    }
+    else {
+    return nil
     }
     
-    switch result{
-    case 1:
-        return number
-    default:
-        return nil
-    }
 }
 
 let palindrom = 1
