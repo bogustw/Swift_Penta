@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2C9D8822594C71007F9770 /* EmployeesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C9D8722594C71007F9770 /* EmployeesContainer.swift */; };
 		CDD8D73422528C0700124DD4 /* lucru.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8D73322528C0700124DD4 /* lucru.swift */; };
 		CDD92D7722527C0100670DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD92D7622527C0100670DE8 /* AppDelegate.swift */; };
 		CDD92D7922527C0100670DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD92D7822527C0100670DE8 /* ViewController.swift */; };
 		CDD92D7C22527C0100670DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD92D7A22527C0100670DE8 /* Main.storyboard */; };
 		CDD92D7E22527C0200670DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD92D7D22527C0200670DE8 /* Assets.xcassets */; };
 		CDD92D8122527C0200670DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD92D7F22527C0200670DE8 /* LaunchScreen.storyboard */; };
-		CDD92D8922527C9000670DE8 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = CDD92D8822527C9000670DE8 /* employees.json */; };
+		CDD97A152256559500EEE604 /* employees.json in Resources */ = {isa = PBXBuildFile; fileRef = CDD97A142256559500EEE604 /* employees.json */; };
+		CDD97A17225655F100EEE604 /* Expertise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD97A16225655F100EEE604 /* Expertise.swift */; };
+		CDD97A19225656E600EEE604 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD97A18225656E600EEE604 /* Experience.swift */; };
+		CDD97A1B2256570D00EEE604 /* Certification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD97A1A2256570D00EEE604 /* Certification.swift */; };
+		CDD97A1D2256574100EEE604 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD97A1C2256574100EEE604 /* Education.swift */; };
+		CDD97A1F22565E2600EEE604 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD97A1E22565E2600EEE604 /* Employee.swift */; };
+		CDD97A212256629300EEE604 /* EmpoyeesJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD97A202256629300EEE604 /* EmpoyeesJSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2C9D8722594C71007F9770 /* EmployeesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesContainer.swift; sourceTree = "<group>"; };
 		CDD8D73322528C0700124DD4 /* lucru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lucru.swift; sourceTree = "<group>"; };
 		CDD92D7322527C0100670DE8 /* employess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = employess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD92D7622527C0100670DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +33,13 @@
 		CDD92D7D22527C0200670DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD92D8022527C0200670DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD92D8222527C0200670DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDD92D8822527C9000670DE8 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = employees.json; path = "../../../../../Downloads/2019_03_29_05-19-06-1728-M1S2-Homework/employees.json"; sourceTree = "<group>"; };
+		CDD97A142256559500EEE604 /* employees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = employees.json; path = "../../../../../../Downloads/2019_03_29_05-19-06-1728-M1S2-Homework/employees.json"; sourceTree = "<group>"; };
+		CDD97A16225655F100EEE604 /* Expertise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expertise.swift; sourceTree = "<group>"; };
+		CDD97A18225656E600EEE604 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		CDD97A1A2256570D00EEE604 /* Certification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certification.swift; sourceTree = "<group>"; };
+		CDD97A1C2256574100EEE604 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		CDD97A1E22565E2600EEE604 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		CDD97A202256629300EEE604 /* EmpoyeesJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpoyeesJSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2C9D8922595663007F9770 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDD97A1C2256574100EEE604 /* Education.swift */,
+				CDD97A1E22565E2600EEE604 /* Employee.swift */,
+				CDD97A16225655F100EEE604 /* Expertise.swift */,
+				CDD97A1A2256570D00EEE604 /* Certification.swift */,
+				CDD97A18225656E600EEE604 /* Experience.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CD2C9D8A2259568B007F9770 /* JSONParser */ = {
+			isa = PBXGroup;
+			children = (
+				CDD97A202256629300EEE604 /* EmpoyeesJSONParser.swift */,
+				CD2C9D8722594C71007F9770 /* EmployeesContainer.swift */,
+				CDD92D7622527C0100670DE8 /* AppDelegate.swift */,
+			);
+			path = JSONParser;
+			sourceTree = "<group>";
+		};
 		CDD92D6A22527C0100670DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +94,11 @@
 		CDD92D7522527C0100670DE8 /* employess */ = {
 			isa = PBXGroup;
 			children = (
-				CDD92D8822527C9000670DE8 /* employees.json */,
+				CD2C9D8A2259568B007F9770 /* JSONParser */,
+				CDD97A142256559500EEE604 /* employees.json */,
 				CDD8D73322528C0700124DD4 /* lucru.swift */,
-				CDD92D7622527C0100670DE8 /* AppDelegate.swift */,
 				CDD92D7822527C0100670DE8 /* ViewController.swift */,
+				CD2C9D8922595663007F9770 /* Models */,
 				CDD92D7A22527C0100670DE8 /* Main.storyboard */,
 				CDD92D7D22527C0200670DE8 /* Assets.xcassets */,
 				CDD92D7F22527C0200670DE8 /* LaunchScreen.storyboard */,
@@ -129,8 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD92D8122527C0200670DE8 /* LaunchScreen.storyboard in Resources */,
-				CDD92D8922527C9000670DE8 /* employees.json in Resources */,
 				CDD92D7E22527C0200670DE8 /* Assets.xcassets in Resources */,
+				CDD97A152256559500EEE604 /* employees.json in Resources */,
 				CDD92D7C22527C0100670DE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD97A1D2256574100EEE604 /* Education.swift in Sources */,
+				CDD97A1F22565E2600EEE604 /* Employee.swift in Sources */,
 				CDD92D7922527C0100670DE8 /* ViewController.swift in Sources */,
 				CDD92D7722527C0100670DE8 /* AppDelegate.swift in Sources */,
 				CDD8D73422528C0700124DD4 /* lucru.swift in Sources */,
+				CD2C9D8822594C71007F9770 /* EmployeesContainer.swift in Sources */,
+				CDD97A19225656E600EEE604 /* Experience.swift in Sources */,
+				CDD97A212256629300EEE604 /* EmpoyeesJSONParser.swift in Sources */,
+				CDD97A1B2256570D00EEE604 /* Certification.swift in Sources */,
+				CDD97A17225655F100EEE604 /* Expertise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
