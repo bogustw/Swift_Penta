@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(jsonParser.employeesArray ?? "Can't find any employees")
-        addEmployee()
-        updateEmplyee()
-        removeEmployee()
+//        print(jsonParser.employeesArray ?? "Can't find any employees")
+//        addEmployee()
+//        updateEmployee()
+//        removeEmployee()
         
         
         

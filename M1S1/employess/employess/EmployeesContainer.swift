@@ -27,7 +27,7 @@ class EmployeesContainer {
         completionHandler()
     }
     
-    func remove( employee: Employee, completionHandler: () -> Void) {
+    func remove(employee: Employee, completionHandler: () -> Void) {
         let employeeIndex = employeesArray?.firstIndex(where: { (employeeObject) -> Bool in
             return (employeeObject.firstName == employee.firstName) && (employeeObject.lastName == employee.lastName)
         }) ?? -1
@@ -37,7 +37,7 @@ class EmployeesContainer {
         completionHandler()
     }
     
-    func update( existingEmployee: Employee, with newEmployee: Employee, completionHandler: () -> Void ) {
+    func update(existingEmployee: Employee, with newEmployee: Employee, completionHandler: () -> Void ) {
         let employeeIndex = employeesArray?.firstIndex(where: { (employeeObject) -> Bool in
             return (employeeObject.firstName == existingEmployee.firstName) && (employeeObject.lastName == existingEmployee.lastName)
         }) ?? -1

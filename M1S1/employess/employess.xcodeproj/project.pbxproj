@@ -68,9 +68,6 @@
 		CD2C9D8A2259568B007F9770 /* JSONParser */ = {
 			isa = PBXGroup;
 			children = (
-				CDD97A202256629300EEE604 /* EmpoyeesJSONParser.swift */,
-				CD2C9D8722594C71007F9770 /* EmployeesContainer.swift */,
-				CDD92D7622527C0100670DE8 /* AppDelegate.swift */,
 			);
 			path = JSONParser;
 			sourceTree = "<group>";
@@ -96,6 +93,9 @@
 			children = (
 				CD2C9D8A2259568B007F9770 /* JSONParser */,
 				CDD97A142256559500EEE604 /* employees.json */,
+				CDD97A202256629300EEE604 /* EmpoyeesJSONParser.swift */,
+				CD2C9D8722594C71007F9770 /* EmployeesContainer.swift */,
+				CDD92D7622527C0100670DE8 /* AppDelegate.swift */,
 				CDD8D73322528C0700124DD4 /* lucru.swift */,
 				CDD92D7822527C0100670DE8 /* ViewController.swift */,
 				CD2C9D8922595663007F9770 /* Models */,

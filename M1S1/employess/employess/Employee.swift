@@ -60,7 +60,7 @@ class Employee {
     
 extension Employee: CustomStringConvertible {
     var description: String {
-            return "lastName = \(self.lastName) firstName = \(self.firstName)"
+        return "lastName = \(self.lastName) firstName = \(self.firstName ?? "no value")"
         }
 }
 
