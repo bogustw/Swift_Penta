@@ -19,10 +19,10 @@
 		1A1179EE2254AF900097EFEB /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179ED2254AF900097EFEB /* Experience.swift */; };
 		1A1179F02254B0620097EFEB /* EmployeesJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179EF2254B0620097EFEB /* EmployeesJSONParser.swift */; };
 		1A1179F22254D8C90097EFEB /* EmployeesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179F12254D8C90097EFEB /* EmployeesContainer.swift */; };
+		CD87E537225F635500B3675A /* beams.png in Resources */ = {isa = PBXBuildFile; fileRef = CD87E536225F635500B3675A /* beams.png */; };
 		CDC8125C225E70D2006382E3 /* BTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8125B225E70D2006382E3 /* BTTextField.swift */; };
 		CDDA215E225D2693009C28BC /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA215D225D2693009C28BC /* SAButton.swift */; };
 		CDDA2160225D2EE2009C28BC /* background-blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDDA215F225D2EE2009C28BC /* background-blue.jpg */; };
-		CDDA2164225D32D2009C28BC /* beams.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDA2163225D32D2009C28BC /* beams.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +40,10 @@
 		1A1179ED2254AF900097EFEB /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		1A1179EF2254B0620097EFEB /* EmployeesJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesJSONParser.swift; sourceTree = "<group>"; };
 		1A1179F12254D8C90097EFEB /* EmployeesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesContainer.swift; sourceTree = "<group>"; };
+		CD87E536225F635500B3675A /* beams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beams.png; path = ../../../../../../Downloads/beams.png; sourceTree = "<group>"; };
 		CDC8125B225E70D2006382E3 /* BTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTextField.swift; sourceTree = "<group>"; };
 		CDDA215D225D2693009C28BC /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 		CDDA215F225D2EE2009C28BC /* background-blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-blue.jpg"; sourceTree = "<group>"; };
-		CDDA2163225D32D2009C28BC /* beams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beams.png; path = ../../../../beams.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 				1A1179E62254AECA0097EFEB /* Models */,
 				1A1179D32254ADCB0097EFEB /* ViewController.swift */,
 				CDDA215F225D2EE2009C28BC /* background-blue.jpg */,
-				CDDA2163225D32D2009C28BC /* beams.png */,
+				CD87E536225F635500B3675A /* beams.png */,
 				1A1179D52254ADCB0097EFEB /* Main.storyboard */,
 				1A1179E32254AE210097EFEB /* Resources */,
 			);
@@ -181,7 +181,7 @@
 			files = (
 				1A1179DC2254ADCD0097EFEB /* LaunchScreen.storyboard in Resources */,
 				1A1179E52254AE310097EFEB /* employees.json in Resources */,
-				CDDA2164225D32D2009C28BC /* beams.png in Resources */,
+				CD87E537225F635500B3675A /* beams.png in Resources */,
 				1A1179D92254ADCD0097EFEB /* Assets.xcassets in Resources */,
 				1A1179D72254ADCB0097EFEB /* Main.storyboard in Resources */,
 				CDDA2160225D2EE2009C28BC /* background-blue.jpg in Resources */,
