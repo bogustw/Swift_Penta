@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A1179D22254ADCB0097EFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179D12254ADCB0097EFEB /* AppDelegate.swift */; };
-		1A1179D42254ADCB0097EFEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179D32254ADCB0097EFEB /* ViewController.swift */; };
+		1A1179D42254ADCB0097EFEB /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179D32254ADCB0097EFEB /* EmployeeListViewController.swift */; };
 		1A1179D72254ADCB0097EFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1179D52254ADCB0097EFEB /* Main.storyboard */; };
 		1A1179D92254ADCD0097EFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1179D82254ADCD0097EFEB /* Assets.xcassets */; };
 		1A1179DC2254ADCD0097EFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1179DA2254ADCD0097EFEB /* LaunchScreen.storyboard */; };
@@ -19,6 +19,8 @@
 		1A1179EE2254AF900097EFEB /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179ED2254AF900097EFEB /* Experience.swift */; };
 		1A1179F02254B0620097EFEB /* EmployeesJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179EF2254B0620097EFEB /* EmployeesJSONParser.swift */; };
 		1A1179F22254D8C90097EFEB /* EmployeesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1179F12254D8C90097EFEB /* EmployeesContainer.swift */; };
+		CD14DCE6225FA301005A910D /* EmployeesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14DCE5225FA301005A910D /* EmployeesDetails.swift */; };
+		CD14DCE8225FA84C005A910D /* DeleteEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14DCE7225FA84C005A910D /* DeleteEmployee.swift */; };
 		CD87E537225F635500B3675A /* beams.png in Resources */ = {isa = PBXBuildFile; fileRef = CD87E536225F635500B3675A /* beams.png */; };
 		CDC8125C225E70D2006382E3 /* BTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8125B225E70D2006382E3 /* BTTextField.swift */; };
 		CDDA215E225D2693009C28BC /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA215D225D2693009C28BC /* SAButton.swift */; };
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		1A1179CE2254ADCB0097EFEB /* JSONParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1179D12254ADCB0097EFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A1179D32254ADCB0097EFEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A1179D32254ADCB0097EFEB /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 		1A1179D62254ADCB0097EFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A1179D82254ADCD0097EFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1179DB2254ADCD0097EFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		1A1179ED2254AF900097EFEB /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		1A1179EF2254B0620097EFEB /* EmployeesJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesJSONParser.swift; sourceTree = "<group>"; };
 		1A1179F12254D8C90097EFEB /* EmployeesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesContainer.swift; sourceTree = "<group>"; };
+		CD14DCE5225FA301005A910D /* EmployeesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDetails.swift; sourceTree = "<group>"; };
+		CD14DCE7225FA84C005A910D /* DeleteEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEmployee.swift; sourceTree = "<group>"; };
 		CD87E536225F635500B3675A /* beams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beams.png; path = ../../../../../../Downloads/beams.png; sourceTree = "<group>"; };
 		CDC8125B225E70D2006382E3 /* BTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTextField.swift; sourceTree = "<group>"; };
 		CDDA215D225D2693009C28BC /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
@@ -81,10 +85,12 @@
 				1A1179EF2254B0620097EFEB /* EmployeesJSONParser.swift */,
 				1A1179F12254D8C90097EFEB /* EmployeesContainer.swift */,
 				1A1179E62254AECA0097EFEB /* Models */,
-				1A1179D32254ADCB0097EFEB /* ViewController.swift */,
+				1A1179D32254ADCB0097EFEB /* EmployeeListViewController.swift */,
 				CDDA215F225D2EE2009C28BC /* background-blue.jpg */,
 				CD87E536225F635500B3675A /* beams.png */,
 				1A1179D52254ADCB0097EFEB /* Main.storyboard */,
+				CD14DCE7225FA84C005A910D /* DeleteEmployee.swift */,
+				CD14DCE5225FA301005A910D /* EmployeesDetails.swift */,
 				1A1179E32254AE210097EFEB /* Resources */,
 			);
 			path = JSONParser;
@@ -195,14 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1179D42254ADCB0097EFEB /* ViewController.swift in Sources */,
+				1A1179D42254ADCB0097EFEB /* EmployeeListViewController.swift in Sources */,
 				CDDA215E225D2693009C28BC /* SAButton.swift in Sources */,
+				CD14DCE8225FA84C005A910D /* DeleteEmployee.swift in Sources */,
 				1A1179E82254AED50097EFEB /* Employee.swift in Sources */,
 				CDC8125C225E70D2006382E3 /* BTTextField.swift in Sources */,
 				1A1179F02254B0620097EFEB /* EmployeesJSONParser.swift in Sources */,
 				1A1179EC2254AF620097EFEB /* Education.swift in Sources */,
 				1A1179EE2254AF900097EFEB /* Experience.swift in Sources */,
 				1A1179F22254D8C90097EFEB /* EmployeesContainer.swift in Sources */,
+				CD14DCE6225FA301005A910D /* EmployeesDetails.swift in Sources */,
 				1A1179D22254ADCB0097EFEB /* AppDelegate.swift in Sources */,
 				1A1179EA2254AF4B0097EFEB /* Expertise.swift in Sources */,
 			);

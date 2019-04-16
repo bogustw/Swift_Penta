@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EmployeeListViewController: UIViewController {
     
     let backgroundImageView = UIImageView()
 
@@ -22,6 +22,23 @@ class ViewController: UIViewController {
         addEmployee()
         updateEmployee()
     }
+    
+    @IBAction func didTapFirst(_ sender: Any) {
+        
+            let firstEmployeeView = self.storyboard?.instantiateViewController(withIdentifier: "EmployeesDetails") as! EmployeesDetails
+            let firstEmployeeNav = UINavigationController (rootViewController: firstEmployeeView)
+            self.present(firstEmployeeNav, animated: true, completion: nil)
+            
+
+    }
+    
+//    @IBAction func didTapFirst(_ sender: Any) {
+//        selectEmployee =
+//    }
+//
+//    @IBAction func didTapOnDisplay(_ sender: Any) {
+//        selectedEmployee = 
+//    }
     func setBackground() {
         view.addSubview(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
