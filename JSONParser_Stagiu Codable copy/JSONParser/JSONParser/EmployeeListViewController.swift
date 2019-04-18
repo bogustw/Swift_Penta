@@ -10,14 +10,29 @@ import UIKit
 
 class EmployeeListViewController: UIViewController {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let employeesNumber: Dictionary<String,Employee> = [
+            "first" : Employee (firstName: "John", lastName: "Smith" ),
+            "second" : Employee(firstName: "Elizabeth", lastName: "Taylor"),
+            "third" : Employee(firstName: "Michele", lastName: "Anderson")
+        ]
+        let destinationViewController = segue.destination
+        if let employeesDetails = destinationViewController as? EmployeesDetails {
+            if let identifier = segue.identifier {
+//                if let order = employeesNumber[identifier] { EmployeesDetails.show = order}
+            }
+        }
+        
+    }
+    
     let backgroundImageView = UIImageView()
-
+    
     let jsonParser = EmployeesContainer.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground()
-//        super.viewDidLoad()
+        //        super.viewDidLoad()
         print(jsonParser.employeesArray ?? "No employees")
         addEmployee()
         updateEmployee()
@@ -25,20 +40,20 @@ class EmployeeListViewController: UIViewController {
     
     @IBAction func didTapFirst(_ sender: Any) {
         
-            let firstEmployeeView = self.storyboard?.instantiateViewController(withIdentifier: "EmployeesDetails") as! EmployeesDetails
-            let firstEmployeeNav = UINavigationController (rootViewController: firstEmployeeView)
-            self.present(firstEmployeeNav, animated: true, completion: nil)
-            
-
+        let firstEmployeeView = self.storyboard?.instantiateViewController(withIdentifier: "EmployeesDetails") as! EmployeesDetails
+        let firstEmployeeNav = UINavigationController (rootViewController: firstEmployeeView)
+        self.present(firstEmployeeNav, animated: true, completion: nil)
+        
+        
     }
     
-//    @IBAction func didTapFirst(_ sender: Any) {
-//        selectEmployee =
-//    }
-//
-//    @IBAction func didTapOnDisplay(_ sender: Any) {
-//        selectedEmployee = 
-//    }
+    //    @IBAction func didTapFirst(_ sender: Any) {
+    //        selectEmployee =
+    //    }
+    //
+    //    @IBAction func didTapOnDisplay(_ sender: Any) {
+    //        selectedEmployee =
+    //    }
     func setBackground() {
         view.addSubview(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -64,7 +79,7 @@ class EmployeeListViewController: UIViewController {
     
     func updateEmployee() {
         jsonParser.update(existingEmployee: Employee(firstName: "Isabela", lastName: "Groza"), with: Employee(firstName: "Isabela Claudia", lastName: "Groza")) {
-           print(jsonParser.employeesArray ?? "No employees")
+            print(jsonParser.employeesArray ?? "No employees")
         }
     }
 }

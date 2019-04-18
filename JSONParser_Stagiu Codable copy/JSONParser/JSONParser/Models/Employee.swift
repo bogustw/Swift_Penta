@@ -28,6 +28,6 @@ class Employee: Codable {
 
 extension Employee: CustomStringConvertible {
     var description: String {
-        return "Employee: \(firstName ?? "") \(lastName ?? "")"
+        return "Employee: \(firstName ?? "") \(lastName ?? "") \(activityArea ?? "No ") \(education) \(expertise) \(experience)"
     }
 }

@@ -9,6 +9,10 @@ import UIKit
 
 class EmployeesDetails : UIViewController {
     let jsonParser = EmployeesContainer.shared
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 
     @IBOutlet weak var EmployeeTextView: UITextView!
     let backgroundImageView = UIImageView()
@@ -56,6 +60,11 @@ class EmployeesDetails : UIViewController {
 //
 //        return cell
 //    }
+    var show = Employee(firstName: "John", lastName: "Smith"){
+        didSet {
+//            updateUI()
+        }
+    }
     
     
 }// end of classs

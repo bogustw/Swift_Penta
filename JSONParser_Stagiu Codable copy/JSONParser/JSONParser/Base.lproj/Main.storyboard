@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Suy-D5-eSu">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,24 +25,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsz-3M-vnc" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsz-3M-vnc" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
                                 <rect key="frame" x="107" y="426" width="200" height="44"/>
                                 <color key="backgroundColor" red="0.55021216102340986" green="1" blue="0.19364510952114311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Q9P-qW-zC4"/>
                                     <constraint firstAttribute="width" constant="200" id="mxI-kJ-DEq"/>
+                                    <constraint firstAttribute="width" secondItem="wsz-3M-vnc" secondAttribute="height" multiplier="50:11" id="seb-dR-OFW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="rxW-xy-sUy" kind="show" id="IfT-mN-ngh"/>
+                                    <segue destination="rxW-xy-sUy" kind="show" identifier="second" id="IfT-mN-ngh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykl-CW-otj" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykl-CW-otj" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
                                 <rect key="frame" x="170" y="338" width="200" height="44"/>
                                 <color key="backgroundColor" red="0.90798819663403829" green="1" blue="0.12085096035519216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bk3-G5-pHH"/>
                                     <constraint firstAttribute="width" constant="200" id="qc7-Wi-OjZ"/>
+                                    <constraint firstAttribute="width" secondItem="Ykl-CW-otj" secondAttribute="height" multiplier="50:11" id="wa9-Ht-PM3"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,54 +52,62 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapFirst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nq-QL-Abl"/>
-                                    <segue destination="rxW-xy-sUy" kind="show" id="kIy-mW-DGu"/>
+                                    <segue destination="rxW-xy-sUy" kind="show" identifier="first" id="kIy-mW-DGu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-Yz-dAE" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
-                                <rect key="frame" x="54" y="762" width="137" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-Yz-dAE" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
+                                <rect key="frame" x="44" y="724" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.55021216100000003" green="1" blue="0.1936451095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="eqz-CS-hBP"/>
+                                    <constraint firstAttribute="height" constant="44" id="iK8-n5-TwX"/>
+                                </constraints>
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <segue destination="zPA-Wb-4Bv" kind="show" id="gx7-SD-dXS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZl-hd-Ldv">
-                                <rect key="frame" x="54" y="78" width="402" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-xE-Ucb" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-xE-Ucb" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
                                 <rect key="frame" x="170" y="500" width="200" height="44"/>
                                 <color key="backgroundColor" red="0.55021216100000003" green="1" blue="0.1936451095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="9jf-QX-pRh"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="q3q-Of-vnJ"/>
                                     <constraint firstAttribute="height" constant="44" id="yJZ-Vq-Ovn"/>
+                                    <constraint firstAttribute="width" secondItem="2RH-xE-Ucb" secondAttribute="height" multiplier="50:11" id="zeQ-W4-q4X"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="rxW-xy-sUy" kind="show" id="wAo-Pn-Rcl"/>
+                                    <segue destination="rxW-xy-sUy" kind="show" identifier="third" id="wAo-Pn-Rcl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs2-aq-Ttj" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
-                                <rect key="frame" x="324" y="772" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs2-aq-Ttj" customClass="SAButton" customModule="JSONParser" customModuleProvider="target">
+                                <rect key="frame" x="238" y="724" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.55021216100000003" green="1" blue="0.1936451095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CaS-KO-tbB"/>
+                                    <constraint firstAttribute="height" constant="44" id="dEf-0f-xaL"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2RH-xE-Ucb" firstAttribute="height" relation="lessThanOrEqual" secondItem="Ykl-CW-otj" secondAttribute="height" constant="44" id="6DG-JJ-uet"/>
+                            <constraint firstItem="N2o-Yz-dAE" firstAttribute="top" secondItem="2RH-xE-Ucb" secondAttribute="bottom" constant="180" id="HOz-nB-oxI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ykl-CW-otj" secondAttribute="trailing" constant="44" id="Ph7-rj-twS"/>
                             <constraint firstItem="wsz-3M-vnc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THd-eG-qPy"/>
                             <constraint firstItem="wsz-3M-vnc" firstAttribute="width" secondItem="Ykl-CW-otj" secondAttribute="width" id="Wyg-c2-bMv"/>
+                            <constraint firstItem="Cs2-aq-Ttj" firstAttribute="width" secondItem="N2o-Yz-dAE" secondAttribute="width" id="XgE-Jp-94W"/>
+                            <constraint firstItem="N2o-Yz-dAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="bgM-25-189"/>
+                            <constraint firstItem="Cs2-aq-Ttj" firstAttribute="leading" secondItem="N2o-Yz-dAE" secondAttribute="trailing" constant="44" id="c9v-dW-i06"/>
+                            <constraint firstItem="Cs2-aq-Ttj" firstAttribute="height" secondItem="N2o-Yz-dAE" secondAttribute="height" id="ch8-VU-yGy"/>
                             <constraint firstItem="wsz-3M-vnc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fMc-qE-dsl"/>
                             <constraint firstItem="wsz-3M-vnc" firstAttribute="height" secondItem="Ykl-CW-otj" secondAttribute="height" id="gzJ-jX-lI0"/>
                             <constraint firstItem="2RH-xE-Ucb" firstAttribute="top" secondItem="wsz-3M-vnc" secondAttribute="bottom" constant="30" id="kvz-Sa-8IP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2RH-xE-Ucb" secondAttribute="trailing" constant="44" id="rsj-V1-i7E"/>
                             <constraint firstItem="2RH-xE-Ucb" firstAttribute="width" secondItem="Ykl-CW-otj" secondAttribute="width" id="toH-zX-uri"/>
+                            <constraint firstItem="Cs2-aq-Ttj" firstAttribute="top" secondItem="2RH-xE-Ucb" secondAttribute="bottom" constant="180" id="vwP-3e-xUF"/>
                             <constraint firstItem="wsz-3M-vnc" firstAttribute="top" secondItem="Ykl-CW-otj" secondAttribute="bottom" constant="44" id="zHz-gF-QQP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -119,14 +129,9 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eo9-1I-biG">
                                 <rect key="frame" x="8" y="338" width="414" height="216"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrD-Mk-NO3">
-                                <rect key="frame" x="84" y="591" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BrD-Mk-NO3" firstAttribute="top" secondItem="eo9-1I-biG" secondAttribute="bottom" constant="80" id="6iG-d8-4Wg"/>
                             <constraint firstItem="eo9-1I-biG" firstAttribute="leading" secondItem="81y-d9-qhZ" secondAttribute="leading" constant="8" id="Fwx-of-FMp"/>
                             <constraint firstItem="eo9-1I-biG" firstAttribute="top" secondItem="81y-d9-qhZ" secondAttribute="top" constant="250" id="NXZ-RY-KGH"/>
                             <constraint firstItem="eo9-1I-biG" firstAttribute="trailing" secondItem="81y-d9-qhZ" secondAttribute="trailing" constant="8" id="plw-nK-MrZ"/>
@@ -192,6 +197,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IfT-mN-ngh"/>
+        <segue reference="wAo-Pn-Rcl"/>
     </inferredMetricsTieBreakers>
 </document>
